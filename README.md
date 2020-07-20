@@ -7,10 +7,15 @@
 ## Installation
 - Make sure that you have [deno](https://deno.land/#installation) installed on your computer
 
-- Create file to check the integrity of modules imported
+- Create file to check the integrity of the imported modules by executing
 
     ```dotenv
     deno cache --lock-write --lock=lock.json --unstable server.ts
+    ```
+- You can check the integrity of the imported modules by executing
+
+    ```dotenv
+    deno cache --reload --lock=lock.json --unstable server.ts
     ```
 
 ## Usage
